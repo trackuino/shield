@@ -6638,26 +6638,6 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 </library>
 <library name="trackuino">
 <packages>
-<package name="VENUS634FLPX">
-<wire x1="0" y1="0" x2="29.21" y2="0" width="0.127" layer="21"/>
-<wire x1="29.21" y1="0" x2="29.21" y2="17.78" width="0.127" layer="21"/>
-<wire x1="29.21" y1="17.78" x2="0" y2="17.78" width="0.127" layer="21"/>
-<wire x1="0" y1="17.78" x2="0" y2="0" width="0.127" layer="21"/>
-<pad name="GND" x="1.27" y="16.51" drill="0.8" shape="square"/>
-<pad name="TX" x="3.81" y="16.51" drill="0.8" shape="square"/>
-<pad name="RX" x="6.35" y="16.51" drill="0.8" shape="square"/>
-<pad name="3.3V" x="8.89" y="16.51" drill="0.8" shape="square"/>
-<pad name="CS" x="11.43" y="16.51" drill="0.8" shape="square"/>
-<pad name="CLK" x="13.97" y="16.51" drill="0.8" shape="square"/>
-<pad name="MISO" x="16.51" y="16.51" drill="0.8" shape="square"/>
-<pad name="MOSI" x="19.05" y="16.51" drill="0.8" shape="square"/>
-<pad name="20" x="1.27" y="1.27" drill="0.8" shape="square"/>
-<pad name="2" x="3.81" y="1.27" drill="0.8" shape="square"/>
-<pad name="1" x="6.35" y="1.27" drill="0.8" shape="square"/>
-<pad name="PPS" x="8.89" y="1.27" drill="0.8" shape="square"/>
-<pad name="VBAT" x="11.43" y="1.27" drill="0.8" shape="square"/>
-<text x="0" y="-2.54" size="1.27" layer="25">Venus GPS</text>
-</package>
 <package name="TO92">
 <description>&lt;b&gt;TO-92&lt;/b&gt;</description>
 <wire x1="-2.095" y1="-1.651" x2="-0.7869" y2="2.5484" width="0.1524" layer="21" curve="-111.097684"/>
@@ -6691,6 +6671,30 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <smd name="BODYGND2" x="36.195" y="8.255" dx="1.6764" dy="0.8128" layer="1" rot="R270"/>
 <text x="34.29" y="-8.89" size="1.27" layer="25">HX1</text>
 </package>
+<package name="VENUS638FLPX">
+<wire x1="0" y1="0" x2="29.21" y2="0" width="0.127" layer="21"/>
+<wire x1="29.21" y1="0" x2="29.21" y2="17.78" width="0.127" layer="21"/>
+<wire x1="29.21" y1="17.78" x2="0" y2="17.78" width="0.127" layer="21"/>
+<wire x1="0" y1="17.78" x2="0" y2="0" width="0.127" layer="21"/>
+<pad name="GND" x="1.27" y="16.51" drill="0.8" diameter="1.6764"/>
+<pad name="3.3V" x="3.81" y="16.51" drill="0.8" diameter="1.6764"/>
+<pad name="TX0" x="6.35" y="16.51" drill="0.8" diameter="1.6764"/>
+<pad name="RX0" x="8.89" y="16.51" drill="0.8" diameter="1.6764"/>
+<pad name="CS" x="11.43" y="16.51" drill="0.8" diameter="1.6764"/>
+<pad name="CLK" x="13.97" y="16.51" drill="0.8" diameter="1.6764"/>
+<pad name="MISO" x="16.51" y="16.51" drill="0.8" diameter="1.6764"/>
+<pad name="MOSI" x="19.05" y="16.51" drill="0.8" diameter="1.6764"/>
+<pad name="VBAT" x="1.27" y="1.27" drill="0.8" diameter="1.6764"/>
+<pad name="GND2" x="3.81" y="1.27" drill="0.8" diameter="1.6764"/>
+<pad name="NAV" x="6.35" y="1.27" drill="0.8" diameter="1.6764"/>
+<pad name="PPS" x="8.89" y="1.27" drill="0.8" diameter="1.6764"/>
+<pad name="RX1" x="11.43" y="1.27" drill="0.8" diameter="1.6764"/>
+<text x="0" y="-2.54" size="1.27" layer="25">&gt;NAME</text>
+<pad name="TX1" x="13.97" y="1.27" drill="0.8" diameter="1.6764"/>
+<pad name="SCL" x="16.51" y="1.27" drill="0.8" diameter="1.6764"/>
+<pad name="SDA" x="19.05" y="1.27" drill="0.8" diameter="1.6764"/>
+<text x="0" y="19.05" size="1.27" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="LM60">
@@ -6704,27 +6708,6 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <pin name="I" x="-7.62" y="2.54" length="short" direction="in"/>
 <pin name="O" x="7.62" y="2.54" length="short" direction="in" rot="R180"/>
 <pin name="GND" x="0" y="-7.62" visible="pad" length="short" direction="pwr" rot="R90"/>
-</symbol>
-<symbol name="VENUS634FLPX">
-<wire x1="-7.62" y1="-12.7" x2="10.16" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-12.7" x2="10.16" y2="12.7" width="0.254" layer="94"/>
-<wire x1="10.16" y1="12.7" x2="-7.62" y2="12.7" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="12.7" x2="-7.62" y2="-12.7" width="0.254" layer="94"/>
-<text x="-2.54" y="10.16" size="1.778" layer="95">&gt;NAME</text>
-<text x="-7.62" y="-15.24" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="GND" x="-12.7" y="-10.16" visible="pin" length="middle"/>
-<pin name="TX" x="-12.7" y="-7.62" visible="pin" length="middle"/>
-<pin name="RX" x="-12.7" y="-5.08" visible="pin" length="middle"/>
-<pin name="3.3V" x="-12.7" y="-2.54" visible="pin" length="middle"/>
-<pin name="CS" x="-12.7" y="0" visible="pin" length="middle"/>
-<pin name="CLK" x="-12.7" y="2.54" visible="pin" length="middle"/>
-<pin name="MISO" x="-12.7" y="5.08" visible="pin" length="middle"/>
-<pin name="MOSI" x="-12.7" y="7.62" visible="pin" length="middle"/>
-<pin name="20" x="15.24" y="-10.16" visible="pin" length="middle" rot="R180"/>
-<pin name="2" x="15.24" y="-7.62" visible="pin" length="middle" rot="R180"/>
-<pin name="1" x="15.24" y="-5.08" visible="pin" length="middle" rot="R180"/>
-<pin name="PPS" x="15.24" y="-2.54" visible="pin" length="middle" rot="R180"/>
-<pin name="VBAT" x="15.24" y="0" visible="pin" length="middle" rot="R180"/>
 </symbol>
 <symbol name="HX1">
 <wire x1="-17.78" y1="15.24" x2="15.24" y2="15.24" width="0.254" layer="94"/>
@@ -6743,6 +6726,30 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <pin name="BODYGND1" x="-5.08" y="20.32" visible="pin" length="middle" rot="R270"/>
 <pin name="BODYGND2" x="-2.54" y="20.32" visible="pin" length="middle" rot="R270"/>
 </symbol>
+<symbol name="VENUS638FLPX">
+<wire x1="-7.62" y1="-10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-10.16" x2="10.16" y2="15.24" width="0.254" layer="94"/>
+<wire x1="10.16" y1="15.24" x2="-7.62" y2="15.24" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="15.24" x2="-7.62" y2="-10.16" width="0.254" layer="94"/>
+<text x="-7.62" y="-15.24" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-12.7" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="GND" x="-12.7" y="-7.62" visible="pin" length="middle"/>
+<pin name="3.3V" x="-12.7" y="-5.08" visible="pin" length="middle"/>
+<pin name="TX0" x="-12.7" y="-2.54" visible="pin" length="middle"/>
+<pin name="RX0" x="-12.7" y="0" visible="pin" length="middle"/>
+<pin name="CS" x="-12.7" y="2.54" visible="pin" length="middle"/>
+<pin name="CLK" x="-12.7" y="5.08" visible="pin" length="middle"/>
+<pin name="MISO" x="-12.7" y="7.62" visible="pin" length="middle"/>
+<pin name="MOSI" x="-12.7" y="10.16" visible="pin" length="middle"/>
+<pin name="VBAT" x="15.24" y="-7.62" visible="pin" length="middle" rot="R180"/>
+<pin name="GND2" x="15.24" y="-5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="NAV" x="15.24" y="-2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="PPS" x="15.24" y="0" visible="pin" length="middle" rot="R180"/>
+<pin name="RX1" x="15.24" y="2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="TX1" x="15.24" y="5.08" length="middle" rot="R180"/>
+<pin name="SCL" x="15.24" y="7.62" length="middle" rot="R180"/>
+<pin name="SDA" x="15.24" y="10.16" length="middle" rot="R180"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="LM60">
@@ -6755,33 +6762,6 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <connect gate="G$1" pin="GND" pad="3"/>
 <connect gate="G$1" pin="I" pad="1"/>
 <connect gate="G$1" pin="O" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="VENUS634FLPX" prefix="M">
-<gates>
-<gate name="G$1" symbol="VENUS634FLPX" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="VENUS634FLPX">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="20" pad="20"/>
-<connect gate="G$1" pin="3.3V" pad="3.3V"/>
-<connect gate="G$1" pin="CLK" pad="CLK"/>
-<connect gate="G$1" pin="CS" pad="CS"/>
-<connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="MISO" pad="MISO"/>
-<connect gate="G$1" pin="MOSI" pad="MOSI"/>
-<connect gate="G$1" pin="PPS" pad="PPS"/>
-<connect gate="G$1" pin="RX" pad="RX"/>
-<connect gate="G$1" pin="TX" pad="TX"/>
-<connect gate="G$1" pin="VBAT" pad="VBAT"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -6805,6 +6785,36 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <connect gate="G$1" pin="RFOUT" pad="RFOUT"/>
 <connect gate="G$1" pin="TXD" pad="TXD"/>
 <connect gate="G$1" pin="VCC" pad="VCC"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VENUS638FLPX">
+<gates>
+<gate name="G$1" symbol="VENUS638FLPX" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="VENUS638FLPX">
+<connects>
+<connect gate="G$1" pin="3.3V" pad="3.3V"/>
+<connect gate="G$1" pin="CLK" pad="CLK"/>
+<connect gate="G$1" pin="CS" pad="CS"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="GND2" pad="GND2"/>
+<connect gate="G$1" pin="MISO" pad="MISO"/>
+<connect gate="G$1" pin="MOSI" pad="MOSI"/>
+<connect gate="G$1" pin="NAV" pad="NAV"/>
+<connect gate="G$1" pin="PPS" pad="PPS"/>
+<connect gate="G$1" pin="RX0" pad="RX0"/>
+<connect gate="G$1" pin="RX1" pad="RX1"/>
+<connect gate="G$1" pin="SCL" pad="SCL"/>
+<connect gate="G$1" pin="SDA" pad="SDA"/>
+<connect gate="G$1" pin="TX0" pad="TX0"/>
+<connect gate="G$1" pin="TX1" pad="TX1"/>
+<connect gate="G$1" pin="VBAT" pad="VBAT"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -11153,7 +11163,6 @@ type RDH, grid 15 mm</description>
 <parts>
 <part name="P+1" library="supply1" deviceset="+5V" device=""/>
 <part name="M2" library="trackuino" deviceset="HX1" device=""/>
-<part name="M3" library="trackuino" deviceset="VENUS634FLPX" device=""/>
 <part name="P+3" library="supply1" deviceset="+5V" device=""/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
@@ -11204,6 +11213,7 @@ type RDH, grid 15 mm</description>
 <part name="Q1" library="transistor-small-signal" deviceset="BSS123" device="" value="PMV20XN, PMV16UN, etc"/>
 <part name="R3" library="resistor" deviceset="R-EU_" device="R1206" value="1K"/>
 <part name="IC2" library="burr-brown" deviceset="REG1117" device=""/>
+<part name="GPS" library="trackuino" deviceset="VENUS638FLPX" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -11233,7 +11243,6 @@ type RDH, grid 15 mm</description>
 <instances>
 <instance part="P+1" gate="1" x="27.94" y="68.58"/>
 <instance part="M2" gate="G$1" x="101.6" y="147.32" rot="R270"/>
-<instance part="M3" gate="G$1" x="106.68" y="96.52"/>
 <instance part="P+3" gate="1" x="93.98" y="142.24" rot="R90"/>
 <instance part="GND7" gate="1" x="91.44" y="132.08"/>
 <instance part="GND8" gate="1" x="30.48" y="139.7"/>
@@ -11242,8 +11251,8 @@ type RDH, grid 15 mm</description>
 <instance part="C1" gate="G$1" x="45.72" y="157.48"/>
 <instance part="C2" gate="G$1" x="12.7" y="157.48"/>
 <instance part="+3V3" gate="G$1" x="53.34" y="160.02" rot="R270"/>
-<instance part="+3V1" gate="G$1" x="86.36" y="99.06" smashed="yes">
-<attribute name="VALUE" x="83.82" y="99.06" size="1.778" layer="96" rot="R180"/>
+<instance part="+3V1" gate="G$1" x="81.28" y="99.06" smashed="yes">
+<attribute name="VALUE" x="78.74" y="99.06" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="GND11" gate="1" x="91.44" y="83.82"/>
 <instance part="GND19" gate="1" x="93.98" y="154.94"/>
@@ -11294,6 +11303,7 @@ type RDH, grid 15 mm</description>
 <instance part="Q1" gate="G$1" x="231.14" y="50.8" rot="MR0"/>
 <instance part="R3" gate="G$1" x="246.38" y="60.96" rot="R90"/>
 <instance part="IC2" gate="G$1" x="30.48" y="160.02"/>
+<instance part="GPS" gate="G$1" x="106.68" y="93.98"/>
 </instances>
 <busses>
 </busses>
@@ -11311,8 +11321,8 @@ type RDH, grid 15 mm</description>
 </segment>
 <segment>
 <wire x1="91.44" y1="86.36" x2="93.98" y2="86.36" width="0.1524" layer="91"/>
-<pinref part="M3" gate="G$1" pin="GND"/>
 <pinref part="GND11" gate="1" pin="GND"/>
+<pinref part="GPS" gate="G$1" pin="GND"/>
 </segment>
 <segment>
 <wire x1="91.44" y1="134.62" x2="91.44" y2="139.7" width="0.1524" layer="91"/>
@@ -11452,10 +11462,10 @@ type RDH, grid 15 mm</description>
 </net>
 <net name="+3V3" class="2">
 <segment>
-<wire x1="86.36" y1="96.52" x2="86.36" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="86.36" y1="93.98" x2="93.98" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="96.52" x2="81.28" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="88.9" x2="93.98" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="+3V1" gate="G$1" pin="+3V3"/>
-<pinref part="M3" gate="G$1" pin="3.3V"/>
+<pinref part="GPS" gate="G$1" pin="3.3V"/>
 </segment>
 <segment>
 <pinref part="IC4" gate="P" pin="VCC"/>
@@ -11602,9 +11612,9 @@ type RDH, grid 15 mm</description>
 <pinref part="J1" gate="G$1" pin="8"/>
 </segment>
 <segment>
-<wire x1="93.98" y1="88.9" x2="86.36" y2="88.9" width="0.1524" layer="91"/>
-<label x="86.36" y="88.9" size="1.778" layer="95" rot="R180"/>
-<pinref part="M3" gate="G$1" pin="TX"/>
+<wire x1="93.98" y1="91.44" x2="86.36" y2="91.44" width="0.1524" layer="91"/>
+<label x="86.36" y="91.44" size="1.778" layer="95" rot="R180"/>
+<pinref part="GPS" gate="G$1" pin="TX0"/>
 </segment>
 </net>
 <net name="TX" class="0">
@@ -11753,10 +11763,10 @@ type RDH, grid 15 mm</description>
 <net name="N$2" class="0">
 <segment>
 <wire x1="96.52" y1="71.12" x2="78.74" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="78.74" y1="71.12" x2="78.74" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="78.74" y1="91.44" x2="93.98" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="71.12" x2="78.74" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="93.98" x2="93.98" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="J5" gate="G$1" pin="1"/>
-<pinref part="M3" gate="G$1" pin="RX"/>
+<pinref part="GPS" gate="G$1" pin="RX0"/>
 </segment>
 </net>
 <net name="TX-3V3" class="0">
