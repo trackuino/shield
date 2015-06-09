@@ -1,22 +1,17 @@
-# What's new #
-
-Changes since [TrackuinoShield21](TrackuinoShield21.md):
-
-  * Replaced Venus GPS 634FLPx (sparkfun #9133) with newer 638FLPx (sparkfun #11058). The unfortunate pinout reshuffling in the newer part makes version 2.2 of the tracker incompatible with the older part.
-  * Eagle 6.x is required
-  * Use Arduino's own 5V regulator
-  * Replaced TO220 3.3V regulator with SMT + board sink
-  * Added bleeder resistor for passive piezo speakers
 
 # Overview #
 
 This is how the tracker looks like:
 
-![http://wiki.trackuino.googlecode.com/hg/img/trackuino-2.2-640px.jpg](http://wiki.trackuino.googlecode.com/hg/img/trackuino-2.2-640px.jpg)
+![Shield](https://github.com/trackuino/trackuino/wiki/img/trackuino-2.2-640px.jpg)
 
 # Building the tracker #
 
-Download trackuino-shield-2.2.zip from the [downloads area](http://code.google.com/p/trackuino/downloads/list). You can use the PCB fab house of your preference to have it manufactured. I have been using [iteadstudio.com's PCB prototyping service](http://iteadstudio.com) with success so far. The gerber files included in the zip were generated for iteadstudio.
+The latest version of the Trackuino shield is 2.2.
+
+Use the `Download ZIP` button to get the schematic / pcb files.
+
+You can use the PCB fab house of your preference to have it manufactured. I have been using [iteadstudio.com's PCB prototyping service](http://iteadstudio.com) with success so far. The gerber files included in the zip were generated for iteadstudio.
 
 Here is the bill of materials:
 
@@ -29,7 +24,7 @@ Here is the bill of materials:
   * [Mouser BOM](http://mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=511d111583) (includes 1 Arduino board, remove it if you have one already)
   * [Venus 638FLPx GPS](https://www.sparkfun.com/products/11058?) from Sparkfun (check for local distributors if you want to avoid customs)
   * [Radiometrix HX1, 144.800 MHz](http://radiometrix.com/content/hx1) for Europe. The US distributor of the 144.390 MHz version is [Lemos International](http://www.lemosint.com/).
-  * [GPS antenna](http://dx.com/p/digital-gps-antenna-1575mhz-f-cable-5303) from Dealextreme. Mouser also carries SMA GPS antennas if you think DX is too slow. Make sure the connector is the SMA male type. Read the [SMAConnectors](SMAConnectors.md) page for clarification on the SMA/RPSMA/male/female nomenclature. Even though the DX description says "F cable", it's actually a male SMA, but doublecheck before buying.
+  * [GPS antenna](http://dx.com/p/digital-gps-antenna-1575mhz-f-cable-5303) from Dealextreme. Mouser also carries SMA GPS antennas if you think DX is too slow. Make sure the connector is the SMA male type. Read the [SMA-connectors](https://github.com/trackuino/shield/wiki/SMA-connectors) page for clarification on the SMA/RPSMA/male/female nomenclature. Even though the DX description says "F cable", it's actually a male SMA, but doublecheck before buying.
   * VHF (144 MHz) antenna. A DIY 1/4 wave groundplane (with radials) is the most effective. Check [Antennas](Antennas.md) for ideas.
 
 # Power #
@@ -42,8 +37,9 @@ There are 3 ways to power the tracker. In either case, the recommended voltage i
 
 Power usage for a 7.5 VDC reference voltage is:
 
-| Waiting for GPS fix | 120 mA |
+| Status | Current |
 |:--------------------|:-------|
+| Waiting for GPS fix | 120 mA |
 | Normal operation (idle) | 70 mA |
 | Normal operation (HX1 transmitting) | 200 mA |
 
@@ -96,7 +92,7 @@ Things you should pay special attention to:
 
 # Building the firmware #
 
-The recommended version of the firmware is [TrackuinoFirmware15](TrackuinoFirmware15.md). Check that page for downloading and building directions.
+The recommended version of the firmware is [Trackuino 1.51](https://github.com/trackuino/trackuino/tree/1.51). Check that page for downloading and building directions.
 
 # Testing #
 
