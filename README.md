@@ -22,8 +22,8 @@ Here is the bill of materials:
 | GPS | 1 | Female headers | [Mouser](http://www.mouser.es/ProductDetail/3M-Electronic-Solutions-Division/929974-01-20-RK/?qs=sGAEpiMZZMs%252bGHln7q6pm%252bCiuHjnbsudNOf3L7d921I%3d), or [Banggood](http://www.banggood.com/100Pcs-40Pin-2_54mm-Female-Header-Connector-Socket-For-DIY-Arduino-p-945506.html) for a lifetime supply. Cut them to desired size. |
 | IC2 | 1 | 3.3V LDO regulator | [Mouser](http://www.mouser.es/Search/ProductDetail.aspx?R=AP1117E33G-13virtualkey62110000virtualkey621-AP1117E33G-13) |
 | IC3, IC4, IC5 | 3 | 3-5.5V buffer | [Mouser](http://www.mouser.es/Search/ProductDetail.aspx?R=M74VHC1GT125DT1Gvirtualkey58410000virtualkey863-M74VHC1GT125DT1G) |
-| J1, J2, J3, J4 | 1 set | Arduino 6, 8 pin male-female headers | [Dealextreme](http://www.dx.com/p/2-mm-pitch-8-pin-male-to-female-pin-headers-for-arduino-5-pcs-152201) + [Dealextreme](http://www.dx.com/p/2-5mm-pitch-6-pin-male-to-female-pin-headers-for-arduino-5-pcs-152192) (5 sets) or [Dealextreme](http://www.dx.com/p/6pin-8pin-10pin-2-3pin-pin-header-set-for-arduino-expansion-board-black-389423) (1 set)| 
-| J5 | 1 | Pin header | Searching for pin headers in Mouser is a PITA. I suggest buying from [Dealextrme](http://www.dx.com/p/2-54mm-1x40-pin-breakaway-straight-male-header-10-piece-pack-144191#.VX8i2c6-RF8) or [Banggood](http://www.banggood.com/10-Pcs-40-Pin-2_54mm-Single-Row-Male-Pin-Header-Strip-For-Arduino-p-918427.html) where you get a lot more for a fraction the price |
+| J1, J2, J3, J4 | 1 set | Arduino 6, 8 pin male-female headers | [Dealextreme](http://www.dx.com/p/2-mm-pitch-8-pin-male-to-female-pin-headers-for-arduino-5-pcs-152201) + [Dealextreme](http://www.dx.com/p/2-5mm-pitch-6-pin-male-to-female-pin-headers-for-arduino-5-pcs-152192) (5 sets), or [Dealextreme](http://www.dx.com/p/6pin-8pin-10pin-2-3pin-pin-header-set-for-arduino-expansion-board-black-389423) (1 set), or [Jameco](http://www.jameco.com/webapp/wcs/stores/servlet/Product_10001_10001_2137756_-1) (1 set) | 
+| J5 | 1 | Pin header | Searching for pin headers in Mouser is a PITA. I suggest buying from [Dealextrme](http://www.dx.com/p/2-54mm-1x40-pin-breakaway-straight-male-header-10-piece-pack-144191#.VX8i2c6-RF8) or [Banggood](http://www.banggood.com/10-Pcs-40-Pin-2_54mm-Single-Row-Male-Pin-Header-Strip-For-Arduino-p-918427.html) where you get a lot more for a fraction the price. Also: [Jameco](http://www.jameco.com/webapp/wcs/stores/servlet/Product_10001_10001_2168211_-1) |
 | M2 | 1 | Radiometrix HX1 | [Radiometrix, 144.800 MHz](http://radiometrix.com/content/hx1) for Europe. The US distributor of the 144.390 MHz version is [Lemos International](http://www.lemosint.com/) |
 | Q1 | 1 | IRFML8244TRPBF N-channel MOSFET | [Mouser](http://www.mouser.es/ProductDetail/International-Rectifier/IRFML8244TRPBF/?qs=%2fha2pyFaduiBVZ08reLy232NPPRTvJ0C96rIvgfREek%3d) |
 | R1 | 1 | 10K | [Mouser](http://www.mouser.es/Search/ProductDetail.aspx?R=CR1206-FX-1002ELFvirtualkey65210000virtualkey652-CR1206FX-1002ELF) |
@@ -34,6 +34,23 @@ Here is the bill of materials:
 | X1 | 1 | Female SMA connector | [Mouser](https://www.mouser.es/Search/ProductDetail.aspx?R=961A514virtualkey67800000virtualkey678-961A514), [Dealextreme](http://www.dx.com/p/gold-plating-sma-female-pcb-end-launch-mount-connectors-golden-5-pcs-149787), [Banggood](http://www.banggood.com/Golden-Copper-SMA-Female-Jack-Center-PCB-Solder-RF-Connector-p-924929.html) |
 | X2, X4 | 2 | 2-pin terminal block (screw clamp) | [Mouser](http://www.mouser.es/Search/ProductDetail.aspx?R=1935161virtualkey65100000virtualkey651-1935161), [Banggood](http://www.banggood.com/50pcs-2pins-Printed-Circuit-Board-Connector-Block-Screw-Terminals-p-943634.html), probably easy to find on Aliexpress, Dealextreme, etc. |
 | X3 | 1 | 3-pin terminal block (screw clamp) | [Mouser](http://www.mouser.es/Search/ProductDetail.aspx?R=1935174virtualkey65100000virtualkey651-1935174), [Dealextreme](http://www.dx.com/p/3-pin-screw-terminal-block-connectors-20-piece-pack-122491), ... (same as above) |
+
+Some of the items above can also be found on Digikey (thanks marty.brennan for your contribution). If you're a registered user, you can save this as a .csv and upload:
+
+|Quantity | Part Number | Customer Reference |
+|:--------|:------------|:-------------------|
+|1|CR1206-FX-1001ELFCT-ND|R3|
+|1|CR1206-FX-2211ELFCT-ND|R2|
+|1|CR1206-FX-6811ELFCT-ND|R1|
+|1|486-1943-ND|S1|
+|1|277-1578-ND|X3|
+|2|277-1667-ND|X2,X4|
+|2|LM60CIZ/NOPB-ND|U1, EXT.LM60|
+|3|M74VHC1GT125DT1GOSCT-ND|IC3-IC5|
+|2|478-1839-ND|C1,C2|
+|1|568-7534-1-ND|Q1|
+|1|991-1046-ND|X1|
+|1|AP1117E33GDICT-ND|IC2|
 
 In addition to the above, you need:
 
