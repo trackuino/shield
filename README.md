@@ -7,7 +7,7 @@ This is how the tracker looks like:
 
 # Building the tracker #
 
-The latest version of the Trackuino shield is 2.2.
+The latest version of the Trackuino shield is 2.3.
 
 Use the `Download ZIP` button to get the schematic / pcb files.
 
@@ -18,7 +18,7 @@ Here is the bill of materials:
 | Label | Qty | Component | Provider |
 |:------|:----|:----------|:---------|
 | C1, C2 | 2 | 10 µF | [Mouser](http://www.mouser.es/Search/ProductDetail.aspx?R=TAP106K016SCSvirtualkey58110000virtualkey581-TAP106K016SCS) |
-| GPS | 1 | Venus 638FLPx | [Sparkfun](https://www.sparkfun.com/products/11058?) (check for local distributors if you want to avoid customs) |
+| GPS | 1 | Venus 638FLPx | [Sparkfun](https://www.sparkfun.com/products/10920) (check for local distributors if you want to avoid customs) |
 | GPS | 1 | Female headers | [Mouser](http://www.mouser.es/ProductDetail/3M-Electronic-Solutions-Division/929974-01-20-RK/?qs=sGAEpiMZZMs%252bGHln7q6pm%252bCiuHjnbsudNOf3L7d921I%3d), or [Banggood](http://www.banggood.com/100Pcs-40Pin-2_54mm-Female-Header-Connector-Socket-For-DIY-Arduino-p-945506.html) for a lifetime supply. Cut them to desired size. |
 | IC2 | 1 | 3.3V LDO regulator | [Mouser](http://www.mouser.es/Search/ProductDetail.aspx?R=AP1117E33G-13virtualkey62110000virtualkey621-AP1117E33G-13) |
 | IC3, IC4, IC5 | 3 | 3-5.5V buffer | [Mouser](http://www.mouser.es/Search/ProductDetail.aspx?R=M74VHC1GT125DT1Gvirtualkey58410000virtualkey863-M74VHC1GT125DT1G) |

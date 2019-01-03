@@ -1,5 +1,9 @@
 # What's new #
 
+## Version 2.3 ##
+
+  * Replaced old Venus GPS part footprint (sparkfun #11058) with the updated footprint (sparkfun #10920) and rewired board. The TX, RX, and 3V3 pins were shuffled around.
+
 ## Version 2.2 ##
 
   * Replaced Venus GPS 634FLPx (sparkfun #9133) with newer 638FLPx (sparkfun #11058). The unfortunate pinout reshuffling in the newer part makes version 2.2 of the tracker incompatible with the older part.
